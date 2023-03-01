@@ -27,13 +27,15 @@ Feel free to calculate and report values that you find relevant.
 - What are the parameters of the data (dates, number of checkouts, kinds of books, etc.)?
   - The parameters of the data are UsageClass, CheckoutType, MaterialType, CheckoutYear, CheckoutMonth, Checkouts, Title, ISBN, Creator, Subjects, Publisher, and PublicationYear.
 - How was the data collected or generated?  
-  - The data is generated through checkout data which comes from multiple historical and current sources. Additionally, usage data is provided by media vendors. Particular for historical physical item checkouts, the data is based on Legrady artwork data archives for checkouts between April 2005 and September 30, 2016. From forward October 2016 to present day, it's from Horizon ILS.
+  - The data is generated through SPL checkout data which comes from multiple historical and current sources. Particular for historical physical item checkouts, the data is based on Legrady artwork data archives for checkouts between April 2005 and September 30, 2016. From forward October 2016 to present day, it's from Horizon ILS.
 - Why was the data collected?  
-  - The data was collected to record trends of library information. Trends such as noting the interest of what the communities they serve are checking out. 
+  - The data was collected to record trends of library information. Trends such as noting popular interest of what the communities they serve are checking out. 
 - What, if any, ethical questions do you need to consider when working with this data?  
   - How does the library differentiate between duplicate entries when some books don't contain an ISBN?
 - What are possible limitations or problems with this data?   (at least 200 words)
-  - One limitations with the dataset is that there is inconsistency in the Creator column, where the name of the creator's full name can be printed backwards - such as last name coming before the first. While also, a printed year can be 
+  - One limitations with the dataset is that there is inconsistency in the Creator column, where the name of the creator's full name can be printed backwards - such as last name coming before the first. In some cases, alongside the creator's name, a printed year is associated with their name.
+  - Another limitation with the data set is that some of the values has missing data. For instance, ISBN and creator has a few empty spaces within the dataset.
+  - Another limitation would be is that it doesn't include any information of the belonging SPL branch the item is checked out from. This kind of data would be useful to determine patterns among library locations across the Seattle area for specific items that are checked out.
 
 ### First Trends Over Time Chart
 
@@ -85,7 +87,7 @@ The last chart is up to you. It could be a line plot, scatter plot, histogram, b
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+``````{r, echo = FALSE, code = readLines("chart3.R")}
 ```
 
 
