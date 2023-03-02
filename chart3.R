@@ -3,7 +3,7 @@ library("tidyverse")
 library("dplyr")
 library("scales")
 
-spl_df <- read.csv("~/Desktop/2022-2023-All-Checkouts-SPL-Data.csv",
+spl_df <- read.csv("2022-2023-All-Checkouts-SPL-Data.csv",
                    stringsAsFactors = FALSE)
 
 collins_df <- spl_df %>%
