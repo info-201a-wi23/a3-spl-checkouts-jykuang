@@ -30,7 +30,7 @@ ggplot(type_checkouts) +
     color = MaterialType
   )) +
   labs(
-    title = "Suzzane Collins SPL Checkouts from 2022-23", 
+    title = "Suzanne Collins SPL Checkouts from 2022-23", 
     x = "Month", 
     y = "Number of Checkouts",
     color = "Material Type"
