@@ -45,7 +45,7 @@ Remarkably, interesting statistics can also be drawn from the overall checkout d
 
 ### Second Trends Over Time Chart
 
-``````{r, echo = FALSE, warning = FALSE, code = readLines("chart2_example.R")}
+``````{r, echo = FALSE, warning = FALSE, code = readLines("chart_two_example.R")}
 ```
 
 - Purpose:

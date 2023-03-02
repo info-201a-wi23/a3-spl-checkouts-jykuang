@@ -29,7 +29,7 @@ ggplot(catching_fire_df) +
   ) +
   labs(
     title = "Comparing 'Catching Fire' & 'Mockingjay' Checkout Material Type (2022-23)",
-    x = "Book", 
+    x = "Title", 
     y = "Total Number of Checkouts",
     color = "Material Type"
   ) +

@@ -6,7 +6,7 @@ spl_df <- read.csv("~/Desktop/2022-2023-All-Checkouts-SPL-Data.csv",
 
 
 
-# 1 Average number of checkouts for each item
+# 1 Number of checkouts for each item (digital vs physical)
 type_checkouts <- spl_df %>%
   group_by(UsageClass) %>%
   summarize(num_checkouts = sum(Checkouts, na.rm = TRUE))
