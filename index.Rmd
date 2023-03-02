@@ -7,11 +7,11 @@ output: html_document
 
 Due to the early 2020 closures from Covid-19, how people navigate about the world has changed in the recent years. Around 2022 is where we evidently see businesses and places reopen once again. Despite the circumstances, the Seattle Public Library has been diligently recording checkout data during the pandemic and to present day (since April 2005). In particular, the SPL checkout data is provided free and available to the public, which allowed for exploration in the following report.
 
-The SPL dataset that is explored is the version containing all SPL items checked out from 2022-2023. Moreover, the particular driving interest is: how has the various types of SPL checkout items changed in the span of one year returning from Covid-19? For instance, the first created chart in this report analyzes the trends of digital vs physical SPL item usage checkouts from 2022-2023, which captures the number of checkouts happening each month. To emphasize, this was something analyzed because its findings can reveal the general public’s adapting preferences for intaking information – either through technological or traditional forms. Furthermore, the second created chart illustrates 2022-23 SPL checkout material type trends of a chosen popular author, Suzanne Collins, who wrote “The Hunger Games” series. The intended purpose to analyze such is to specifically see how checkout material (e.g., audiobooks, books, eBooks, sound disk) are sought out for an individual author within this large dataset. In other words, adding on to the previous chart of item usage checkouts, whether the public favors digital or physical formats of obtaining information. Lastly, the third data visualization investigates more into work created by Suzanne Collin, such as comparing the total number of checkouts from 2022-2023 of her two stories titled: “Catching Fire” and “Mockingjay.” Furthermore, these two books were chosen because I wanted to analyze how do sequels in a series differ from one another in terms of audience retention given various material type formats? Overall, the goal of these data visualizations was to note how the public utilizes different formats of library information resources. 
+The SPL dataset that is explored is the version containing all SPL items checked out from 2022-2023. Moreover, the particular driving interest is: how has the various types of SPL checkout items changed in the span of one year returning from Covid-19? For instance, the first created chart in this report analyzes the trends of digital vs physical SPL item usage checkouts from 2022-2023, which captures the number of checkouts happening each month. To emphasize, this was something analyzed because its findings can reveal the general public's adapting preferences for intaking information -- either through technological or traditional forms. Furthermore, the second created chart illustrates 2022-23 SPL checkout material type trends of a chosen popular author, Suzanne Collins, who wrote "The Hunger Games" series. The intended purpose to analyze such is to specifically see how checkout material (e.g., audiobooks, books, eBooks, sound disk) are sought out for an individual author within this large dataset. In other words, adding on to the previous chart of item usage checkouts, whether the public favors digital or physical formats of obtaining information. Lastly, the third data visualization investigates more into work created by Suzanne Collin, such as comparing the total number of checkouts from 2022-2023 of her two stories titled: "Catching Fire" and "Mockingjay." Furthermore, these two books were chosen because I wanted to analyze how do sequels in a series differ from one another in terms of audience retention given various material type formats? Overall, the goal of these data visualizations was to note how the public utilizes different formats of library information resources.
 
 ### Summary Information
 
-Remarkably, interesting statistics can also be drawn from the overall checkout data set. For instance, in approximately one year, from 2022 to 2023, the Seattle Public library has a total of 9,196,991 items that been checked out! Of those items, 5,142,238 of them are digital item usages, while the remaining 4,054,753 are physical item usages. Particularly, data from the data set shows that the story “Mockingjay” written by Suzanne Collins has the month January as the popular period where this month has the most checkouts for this book (161 total checkouts). Sadly, April was when the book had the least number of checkouts (47 total checkouts). Moving on, of all eBooks checked out from the SPL, January was the month with the greatest number of check outs (205,681). While February had the least number of eBook check outs (205,681). Finally, the number of print books that were checked out from 2022 to 2023 is a declining difference of 57,905 books, in other words there were more print book checkouts in 2022 than 2023. 
+Remarkably, interesting statistics can also be drawn from the overall checkout data set. For instance, in approximately one year, from 2022 to 2023, the Seattle Public library has a total of 9,196,991 items that been checked out! Of those items, 5,142,238 of them are digital item usages, while the remaining 4,054,753 are physical item usages. Particularly, data from the data set shows that the story "Mockingjay" written by Suzanne Collins has the month January as the popular period where this month has the most checkouts for this book (161 total checkouts). Sadly, April was when the book had the least number of checkouts (47 total checkouts). Moving on, of all eBooks checked out from the SPL, January was the month with the greatest number of check outs (205,681). While February had the least number of eBook check outs (205,681). Finally, the number of print books that were checked out from 2022 to 2023 is a declining difference of 57,905 books, in other words there were more print book checkouts in 2022 than 2023.
 
 ### The Dataset
 
@@ -19,59 +19,54 @@ Remarkably, interesting statistics can also be drawn from the overall checkout d
   - The data is published by the Seattle Public Library.
 - What are the parameters of the data (dates, number of checkouts, kinds of books, etc.)?
   - The parameters of the data are UsageClass, CheckoutType, MaterialType, CheckoutYear, CheckoutMonth, Checkouts, Title, ISBN, Creator, Subjects, Publisher, and PublicationYear.
-- How was the data collected or generated?  
+-  How was the data collected or generated?
   - The data is generated through SPL checkout data which comes from multiple historical and current sources. Particular for historical physical item checkouts, the data is based on Legrady artwork data archives for checkouts between April 2005 and September 30, 2016. From forward October 2016 to present day, it's from Horizon ILS.
-- Why was the data collected?  
-  - The data was collected to record trends of library information. Trends such as noting popular interest of what the communities they serve are checking out. 
-- What, if any, ethical questions do you need to consider when working with this data?  
-  - How does the library differentiate between duplicate entries when some books don't contain an ISBN?
-- How many observations (rows) are in your data?
+-  Why was the data collected?
+  - The data was collected to record trends of library information. Trends such as noting popular interest of what the communities they serve are checking out.
+- What, if any, ethical questions do you need to consider when working with this data?
+  -  How does the library differentiate between duplicate entries when some books don't contain an ISBN?
+-  How many observations (rows) are in your data?
   - 2,757,014
-- How many features (columns) are in the data?
-  - 12
-- What are possible limitations or problems with this data?   (at least 200 words)
+-  How many features (columns) are in the data?
+  -  12
+- What are possible limitations or problems with this data? (at least 200 words)
   - One limitations with the dataset is that there is inconsistency in the Creator column, where the name of the creator's full name can be printed backwards - such as last name coming before the first name. In some cases, alongside the creator's name, a printed year is associated with their name. Hence, this data set requires organizing and cleaning the data to sort through this large data set.
-  - Another limitation with the data set is that some of the values has missing data. For instance, ISBN and creator has a few empty spaces within the dataset. While some have a list of values. The data can get confusing when places in the data set range from having 0 information to also having many within the same column. 
+  - Another limitation with the data set is that some of the values has missing data. For instance, ISBN and creator has a few empty spaces within the dataset. While some have a list of values. The data can get confusing when places in the data set range from having 0 information to also having many within the same column.
   - Another limitation would be is that it doesn't include any information of the belonging SPL branch the item is checked out from. This kind of data would be useful to determine patterns among library locations across the Seattle area for specific items that are checked out.
   - Another limitation with the data set is that some of the titles are manually labeled by the SPL. In this case, a title can have additional key words (e.g., book 1, book 2, etc) associated with their original title which makes it difficult to filter the data for specific titles.
-  - Another limitation with the 
 
 ### First Trends Over Time Chart
 
 ``````{r, echo = FALSE, warning = FALSE, code = readLines("chart_one.R")}
 ```
 
-- Purpose:
-  - This chart was created to highlight trends of SPL item usage checkouts over the months of 2022-2023. It's interesting to see whether digital usage checkouts were more popular than physical usage checkouts. Consequently, a line plot was necessary to show this comparison overtime trend.
-
-- Patterns:
-  - Throughout 2022-2023, the number of physical usage checkout items each month stayed consistent. Where each month does not not surpass 350k checkouts for physical usage checkouts. Range: 250k - less than 350k checkouts.
-  - The number of digital usage checkouts is gradually increasing throughout 2022-23. 
+-   Purpose:
+    -   This chart was created to highlight trends of SPL item usage checkouts over the months of 2022-2023. It's interesting to see whether digital usage checkouts were more popular than physical usage checkouts. Consequently, a line plot was necessary to show this comparison overtime trend.
+-   Patterns:
+    -   Throughout 2022-2023, the number of physical usage checkout items each month stayed consistent. Where each month does not not surpass 350k checkouts for physical usage checkouts. Range: 250k - less than 350k checkouts.
+    -   The number of digital usage checkouts is gradually increasing throughout 2022-23.
 
 ### Second Trends Over Time Chart
 
 ``````{r, echo = FALSE, warning = FALSE, code = readLines("chart_two_example.R")}
 ```
 
-- Purpose:
-  - This chart was included to show the number of checkouts for the various types of material formats including all of author Suzanne Collins' work. A line chart was appropriate to underline how some options are more popular than others when consuming material written by her. To add, color is a needed component in this chart to showcase that Suzanne Collins has four types of checkout material type formats offered at the SPL.
-  
-- Patterns:
-  - The number of checkouts for Suzanne Collen audio books is drastically increasing throughout the year.
-  - The number of sound disc checkouts remains close to around 0.
-  - The number eBook checkouts for Suzanne Collin is slightly declining.
-  - The number of books is staying consistent - below 100 checkouts checkouts each month. 
-  
+-   Purpose:
+    -   This chart was included to show the number of checkouts for the various types of material formats including all of author Suzanne Collins' work. A line chart was appropriate to underline how some options are more popular than others when consuming material written by her. To add, color is a needed component in this chart to showcase that Suzanne Collins has four types of checkout material type formats offered at the SPL.
+-   Patterns:
+    -   The number of checkouts for Suzanne Collen audio books is drastically increasing throughout the year.
+    -   The number of sound disc checkouts remains close to around 0.
+    -   The number eBook checkouts for Suzanne Collin is slightly declining.
+    -   The number of books is staying consistent - below 100 checkouts checkouts each month.
+
 ### Your Choice
 
-``````{r, echo = FALSE, warning = FALSE, code = readLines("chart_three.R")}
+``````{r, echo = FALSE, warning = FALSE, code = readLines("chart3.R")}
 ```
 
-- Purpose:
-  - This stacked bar chart was created to show how there were more total checkouts for the story titled "Catching Fire" than "Mockingjay." Considering "Catching Fire" is the second to last book of the Hunger Games series - while "Mockingjay" is the last, this data visualization showcase is necessary to see whether the public continue on with this series after finishing "Catching Fire." In addition, the component of material type was included in this data visualization to get an idea of how people are consuming these two stories. To add, to have the stacked bar char not filled in completely with color was an intentional choice to ensure all the Material Type labels be represented to their fullest potential (i.e., sound disc).
-  
-- Patterns:
-  - "Catching Fire" has more total number of checkouts that "Mockinjay."
-  - The material type sound disk, in both titled stories, has a thin line (close to 0) to represent total checkouts.
-  - There are more audiobook checkouts for "Catching Fire" than "Mockingjay."
-  
+-   Purpose:
+    -   This stacked bar chart was created to show how there were more total checkouts for the story titled "Catching Fire" than "Mockingjay." Considering "Catching Fire" is the second to last book of the Hunger Games series - while "Mockingjay" is the last, this data visualization showcase is necessary to see whether the public continue on with this series after finishing "Catching Fire." In addition, the component of material type was included in this data visualization to get an idea of how people are consuming these two stories. To add, to have the stacked bar char not filled in completely with color was an intentional choice to ensure all the Material Type labels be represented to their fullest potential (i.e., sound disc).
+-   Patterns:
+    -   "Catching Fire" has more total number of checkouts that "Mockingjay."
+    -   The material type sound disk, in both titled stories, has a thin line (close to 0) to represent total checkouts.
+    -   There are more audiobook checkouts for "Catching Fire" than "Mockingjay."

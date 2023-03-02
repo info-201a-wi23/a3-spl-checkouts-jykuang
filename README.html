@@ -11,7 +11,7 @@
 
 
 
-<title>A3: SPL Library Checkouts</title>
+<title>README</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -348,210 +348,68 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">A3: SPL Library Checkouts</h1>
 
 </div>
 
 
-<div id="introduction" class="section level3">
-<h3>Introduction</h3>
-<p>Due to the early 2020 closures from Covid-19, how people navigate
-about the world has changed in the recent years. Around 2022 is where we
-evidently see businesses and places reopen once again. Despite the
-circumstances, the Seattle Public Library has been diligently recording
-checkout data during the pandemic and to present day (since April 2005).
-In particular, the SPL checkout data is provided free and available to
-the public, which allowed for exploration in the following report.</p>
-<p>The SPL dataset that is explored is the version containing all SPL
-items checked out from 2022-2023. Moreover, the particular driving
-interest is: how has the various types of SPL checkout items changed in
-the span of one year returning from Covid-19? For instance, the first
-created chart in this report analyzes the trends of digital vs physical
-SPL item usage checkouts from 2022-2023, which captures the number of
-checkouts happening each month. To emphasize, this was something
-analyzed because its findings can reveal the general public’s adapting
-preferences for intaking information – either through technological or
-traditional forms. Furthermore, the second created chart illustrates
-2022-23 SPL checkout material type trends of a chosen popular author,
-Suzanne Collins, who wrote “The Hunger Games” series. The intended
-purpose to analyze such is to specifically see how checkout material
-(e.g., audiobooks, books, eBooks, sound disk) are sought out for an
-individual author within this large dataset. In other words, adding on
-to the previous chart of item usage checkouts, whether the public favors
-digital or physical formats of obtaining information. Lastly, the third
-data visualization investigates more into work created by Suzanne
-Collin, such as comparing the total number of checkouts from 2022-2023
-of her two stories titled: “Catching Fire” and “Mockingjay.”
-Furthermore, these two books were chosen because I wanted to analyze how
-do sequels in a series differ from one another in terms of audience
-retention given various material type formats? Overall, the goal of
-these data visualizations was to note how the public utilizes different
-formats of library information resources.</p>
+<div id="assignment-3-spl-library-checkouts" class="section level1">
+<h1>Assignment 3: SPL Library Checkouts</h1>
+<p>Link to your final GitHub pages site here:</p>
+<p><a href="https://info-201a-wi23.github.io/a3-spl-checkouts-jykuang/" class="uri">https://info-201a-wi23.github.io/a3-spl-checkouts-jykuang/</a></p>
+<p>In this assignment, you will use your data analysis and visualization
+skills to analyze patterns and trends in <a href="https://data.seattle.gov/Community/Checkouts-by-Title/tmmm-ytt6">library
+circulation data published by the Seattle Public Library</a>.</p>
+<p>This assignment is more open-ended than previous ones. You will be
+tasked with understanding the data itself, choosing the variables you
+want to analyze, and deciding the optimal way to write your code.</p>
 </div>
-<div id="summary-information" class="section level3">
-<h3>Summary Information</h3>
-<p>Remarkably, interesting statistics can also be drawn from the overall
-checkout data set. For instance, in approximately one year, from 2022 to
-2023, the Seattle Public library has a total of 9,196,991 items that
-been checked out! Of those items, 5,142,238 of them are digital item
-usages, while the remaining 4,054,753 are physical item usages.
-Particularly, data from the data set shows that the story “Mockingjay”
-written by Suzanne Collins has the month January as the popular period
-where this month has the most checkouts for this book (161 total
-checkouts). Sadly, April was when the book had the least number of
-checkouts (47 total checkouts). Moving on, of all eBooks checked out
-from the SPL, January was the month with the greatest number of check
-outs (205,681). While February had the least number of eBook check outs
-(205,681). Finally, the number of print books that were checked out from
-2022 to 2023 is a declining difference of 57,905 books, in other words
-there were more print book checkouts in 2022 than 2023.</p>
-</div>
-<div id="the-dataset" class="section level3">
-<h3>The Dataset</h3>
+<div id="data" class="section level1">
+<h1>Data</h1>
+<p>The data for this assignment comes from the <a href="https://data.seattle.gov/Community/Checkouts-by-Title/tmmm-ytt6">Seattle
+Public Library</a>. The library has checkout data going back to 2005,
+and it includes more than 40 million rows, which is too large to fit on
+our laptops. So we are including smaller datasets that you can use, and
+you are free to work with any or all of these datasets.</p>
+<p>To access the datasets, you will need to download them as zip files
+by clicking one or more of the links on Canvas, and then you will need
+to unzip the file(s) and load the CSV files into RStudio by providing
+the correct file path(s).</p>
 <ul>
-<li>Who collected/published the data?
-<ul>
-<li>The data is published by the Seattle Public Library.</li>
-</ul></li>
-<li>What are the parameters of the data (dates, number of checkouts,
-kinds of books, etc.)?
-<ul>
-<li>The parameters of the data are UsageClass, CheckoutType,
-MaterialType, CheckoutYear, CheckoutMonth, Checkouts, Title, ISBN,
-Creator, Subjects, Publisher, and PublicationYear.</li>
-</ul></li>
-<li>How was the data collected or generated?
-<ul>
-<li>The data is generated through SPL checkout data which comes from
-multiple historical and current sources. Particular for historical
-physical item checkouts, the data is based on Legrady artwork data
-archives for checkouts between April 2005 and September 30, 2016. From
-forward October 2016 to present day, it’s from Horizon ILS.</li>
-</ul></li>
-<li>Why was the data collected?
-<ul>
-<li>The data was collected to record trends of library information.
-Trends such as noting popular interest of what the communities they
-serve are checking out.</li>
-</ul></li>
-<li>What, if any, ethical questions do you need to consider when working
-with this data?
-<ul>
-<li>How does the library differentiate between duplicate entries when
-some books don’t contain an ISBN?</li>
-</ul></li>
-<li>How many observations (rows) are in your data?
-<ul>
-<li>2,757,014</li>
-</ul></li>
-<li>How many features (columns) are in the data?
-<ul>
-<li>12</li>
-</ul></li>
-<li>What are possible limitations or problems with this data? (at least
-200 words)
-<ul>
-<li>One limitations with the dataset is that there is inconsistency in
-the Creator column, where the name of the creator’s full name can be
-printed backwards - such as last name coming before the first name. In
-some cases, alongside the creator’s name, a printed year is associated
-with their name. Hence, this data set requires organizing and cleaning
-the data to sort through this large data set.</li>
-<li>Another limitation with the data set is that some of the values has
-missing data. For instance, ISBN and creator has a few empty spaces
-within the dataset. While some have a list of values. The data can get
-confusing when places in the data set range from having 0 information to
-also having many within the same column.</li>
-<li>Another limitation would be is that it doesn’t include any
-information of the belonging SPL branch the item is checked out from.
-This kind of data would be useful to determine patterns among library
-locations across the Seattle area for specific items that are checked
-out.</li>
-<li>Another limitation with the data set is that some of the titles are
-manually labeled by the SPL. In this case, a title can have additional
-key words (e.g., book 1, book 2, etc) associated with their original
-title which makes it difficult to filter the data for specific
-titles.</li>
-<li>Another limitation with the</li>
-</ul></li>
+<li>Dataset with items checked out at least 5 times a month from
+2013-2023 (file size: +1 GB)</li>
+<li>Dataset with items checked out at least 10 times a month from
+2017-20203 (file size: 229 MB)</li>
+<li>Dataset with all items checked out in 2022-2023 (file size: 709
+MB)</li>
 </ul>
+<p>The datasets are large, so you should assess how much storage space
+you have on your computer (Mac / Windows), and then decide which dataset
+to choose based on that assessment. You are also welcome to create and
+use your own datasets through the <a href="https://data.seattle.gov/Community/Checkouts-by-Title/tmmm-ytt6/explore">SPL
+Open Data portal</a>.</p>
+<p>For example, if you want to compare the number of checkouts for all
+of the Lord of the Rings books, you could go into the portal, search for
+Lord of Rings (you might need to use advanced search and filtering
+options for some searches), and then download the relevant data and
+upload it into RStudio for use in your assignment.</p>
 </div>
-<div id="first-trends-over-time-chart" class="section level3">
-<h3>First Trends Over Time Chart</h3>
-<p>```<code>{r, echo = FALSE, warning = FALSE, code = readLines(&quot;chart_one.R&quot;)}</code></p>
+<div id="assignment-structure" class="section level1">
+<h1>Assignment Structure</h1>
+<p>For this assignment, you will create a report about library
+circulation trends, which must include:</p>
 <ul>
-<li>Purpose:
-<ul>
-<li>This chart was created to highlight trends of SPL item usage
-checkouts over the months of 2022-2023. It’s interesting to see whether
-digital usage checkouts were more popular than physical usage checkouts.
-Consequently, a line plot was necessary to show this comparison overtime
-trend.</li>
-</ul></li>
-<li>Patterns:
-<ul>
-<li>Throughout 2022-2023, the number of physical usage checkout items
-each month stayed consistent. Where each month does not not surpass 350k
-checkouts for physical usage checkouts. Range: 250k - less than 350k
-checkouts.</li>
-<li>The number of digital usage checkouts is gradually increasing
-throughout 2022-23.</li>
-</ul></li>
-</ul>
-</div>
-<div id="second-trends-over-time-chart" class="section level3">
-<h3>Second Trends Over Time Chart</h3>
-<p>```<code>{r, echo = FALSE, warning = FALSE, code = readLines(&quot;chart_two_example.R&quot;)}</code></p>
-<ul>
-<li>Purpose:
-<ul>
-<li>This chart was included to show the number of checkouts for the
-various types of material formats including all of author Suzanne
-Collins’ work. A line chart was appropriate to underline how some
-options are more popular than others when consuming material written by
-her. To add, color is a needed component in this chart to showcase that
-Suzanne Collins has four types of checkout material type formats offered
-at the SPL.</li>
-</ul></li>
-<li>Patterns:
-<ul>
-<li>The number of checkouts for Suzanne Collen audio books is
-drastically increasing throughout the year.</li>
-<li>The number of sound disc checkouts remains close to around 0.</li>
-<li>The number eBook checkouts for Suzanne Collin is slightly
-declining.</li>
-<li>The number of books is staying consistent - below 100 checkouts
-checkouts each month.</li>
-</ul></li>
-</ul>
-</div>
-<div id="your-choice" class="section level3">
-<h3>Your Choice</h3>
-<p>```<code>{r, echo = FALSE, warning = FALSE, code = readLines(&quot;chart_three.R&quot;)}</code></p>
-<ul>
-<li>Purpose:
-<ul>
-<li>This stacked bar chart was created to show how there were more total
-checkouts for the story titled “Catching Fire” than “Mockingjay.”
-Considering “Catching Fire” is the second to last book of the Hunger
-Games series - while “Mockingjay” is the last, this data visualization
-showcase is necessary to see whether the public continue on with this
-series after finishing “Catching Fire.” In addition, the component of
-material type was included in this data visualization to get an idea of
-how people are consuming these two stories. To add, to have the stacked
-bar char not filled in completely with color was an intentional choice
-to ensure all the Material Type labels be represented to their fullest
-potential (i.e., sound disc).</li>
-</ul></li>
-<li>Patterns:
-<ul>
-<li>“Catching Fire” has more total number of checkouts that
-“Mockingjay.”</li>
-<li>The material type sound disk, in both titled stories, has a thin
-line (close to 0) to represent total checkouts.</li>
-<li>There are more audiobook checkouts for “Catching Fire” than
-“Mockingjay.”</li>
-</ul></li>
+<li>An introduction of the data and a description of the
+trends/books/items you are choosing to analyze (and why!)</li>
+<li>A paragraph of summary information, citing at least 5 values
+calculated from the data</li>
+<li>A more detailed description of the dataset, who collected/published
+it, why, and any limitations or problems with the data</li>
+<li>A first chart that shows trends over time for variables of your
+choice</li>
+<li>A second chart that shows trends over time for a variables of your
+choice</li>
+<li>A third chart that uses any kind of plot (bar chart, scatterplot,
+it’s up to you)</li>
 </ul>
 </div>
 
