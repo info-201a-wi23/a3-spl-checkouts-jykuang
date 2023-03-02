@@ -25,10 +25,16 @@ Remarkably, interesting statistics can also be drawn from the overall checkout d
   - The data was collected to record trends of library information. Trends such as noting popular interest of what the communities they serve are checking out. 
 - What, if any, ethical questions do you need to consider when working with this data?  
   - How does the library differentiate between duplicate entries when some books don't contain an ISBN?
+- How many observations (rows) are in your data?
+  - 2,757,014
+- How many features (columns) are in the data?
+  - 12
 - What are possible limitations or problems with this data?   (at least 200 words)
-  - One limitations with the dataset is that there is inconsistency in the Creator column, where the name of the creator's full name can be printed backwards - such as last name coming before the first. In some cases, alongside the creator's name, a printed year is associated with their name.
-  - Another limitation with the data set is that some of the values has missing data. For instance, ISBN and creator has a few empty spaces within the dataset.
+  - One limitations with the dataset is that there is inconsistency in the Creator column, where the name of the creator's full name can be printed backwards - such as last name coming before the first name. In some cases, alongside the creator's name, a printed year is associated with their name. Hence, this data set requires organizing and cleaning the data to sort through this large data set.
+  - Another limitation with the data set is that some of the values has missing data. For instance, ISBN and creator has a few empty spaces within the dataset. While some have a list of values. The data can get confusing when places in the data set range from having 0 information to also having many within the same column. 
   - Another limitation would be is that it doesn't include any information of the belonging SPL branch the item is checked out from. This kind of data would be useful to determine patterns among library locations across the Seattle area for specific items that are checked out.
+  - Another limitation with the data set is that some of the titles are manually labeled by the SPL. In this case, a title can have additional key words (e.g., book 1, book 2, etc) associated with their original title which makes it difficult to filter the data for specific titles.
+  - Another limitation with the 
 
 ### First Trends Over Time Chart
 
