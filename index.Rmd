@@ -64,7 +64,7 @@ Remarkably, interesting statistics can also be drawn from the overall checkout d
   
 ### Your Choice
 
-``````{r, echo = FALSE, warning = FALSE, code = readLines("Chart3.R")}
+``````{r, echo = FALSE, warning = FALSE, code = readLines("chart_three.R")}
 ```
 
 - Purpose:
