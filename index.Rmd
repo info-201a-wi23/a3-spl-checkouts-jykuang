@@ -11,16 +11,7 @@ The SPL dataset that is explored is the version containing all SPL items checked
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
-
-These will likely be calculated using your DPLYR skills, answering questions such as:
-
-- What is the average number of checkouts for each item?
-- What is the month or year with the most/least checkouts for a book that you're interested in?
-- What is the month or year with the most/least checkouts for ebooks?
-- How has the number of print book checkouts changed over time?
-
-Feel free to calculate and report values that you find relevant.
+Remarkably, interesting statistics can also be drawn from the overall checkout data set. For instance, in approximately one year, from 2022 to 2023, the Seattle Public library has a total of 9,196,991 items that been checked out! Of those items, 5,142,238 of them are digital item usages, while the remaining 4,054,753 are physical item usages. Particularly, data from the data set shows that the story “Mockingjay” written by Suzanne Collins has the month January as the popular period where this month has the most checkouts for this book (161 total checkouts). Sadly, April was when the book had the least number of checkouts (47 total checkouts). Moving on, of all eBooks checked out from the SPL, January was the month with the greatest number of check outs (205,681). While February had the least number of eBook check outs (205,681). Finally, the number of print books that were checked out from 2022 to 2023 is a declining difference of 57,905 books, in other words there were more print book checkouts in 2022 than 2023. 
 
 ### The Dataset
 
