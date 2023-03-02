@@ -44,7 +44,6 @@ Remarkably, interesting statistics can also be drawn from the overall checkout d
 - Purpose:
   - This chart was created to highlight trends of SPL item usage checkouts over the months of 2022-2023. It's interesting to see whether digital usage checkouts were more popular than physical usage checkouts. Consequently, a line plot was necessary to show this comparison overtime trend.
 
-
 - Patterns:
   - Throughout 2022-2023, the number of physical usage checkout items each month stayed consistent. Where each month does not not surpass 350k checkouts for physical usage checkouts. Range: 250k - less than 350k checkouts.
   - The number of digital usage checkouts is gradually increasing throughout 2022-23. 
