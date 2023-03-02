@@ -19,15 +19,15 @@ Remarkably, interesting statistics can also be drawn from the overall checkout d
   - The data is published by the Seattle Public Library.
 - What are the parameters of the data (dates, number of checkouts, kinds of books, etc.)?
   - The parameters of the data are UsageClass, CheckoutType, MaterialType, CheckoutYear, CheckoutMonth, Checkouts, Title, ISBN, Creator, Subjects, Publisher, and PublicationYear.
--  How was the data collected or generated?
+- How was the data collected or generated?
   - The data is generated through SPL checkout data which comes from multiple historical and current sources. Particular for historical physical item checkouts, the data is based on Legrady artwork data archives for checkouts between April 2005 and September 30, 2016. From forward October 2016 to present day, it's from Horizon ILS.
--  Why was the data collected?
+- Why was the data collected?
   - The data was collected to record trends of library information. Trends such as noting popular interest of what the communities they serve are checking out.
 - What, if any, ethical questions do you need to consider when working with this data?
   - How does the library differentiate between duplicate entries when some books don't contain an ISBN?
--  How many observations (rows) are in your data?
+- How many observations (rows) are in your data?
   - 2,757,014
--  How many features (columns) are in the data?
+- How many features (columns) are in the data?
   - 12
 - What are possible limitations or problems with this data? (at least 200 words)
   - One limitations with the dataset is that there is inconsistency in the Creator column, where the name of the creator's full name can be printed backwards - such as last name coming before the first name. In some cases, alongside the creator's name, a printed year is associated with their name. Hence, this data set requires organizing and cleaning the data to sort through this large data set.
@@ -37,24 +37,25 @@ Remarkably, interesting statistics can also be drawn from the overall checkout d
 
 ### First Trends Over Time Chart
 
-``````{r, echo = FALSE, warning = FALSE, code = readLines("chart_one.R")}
+``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("chart_one.R")}
 ```
 
 - Purpose:
   - This chart was created to highlight trends of SPL item usage checkouts over the months of 2022-2023. It's interesting to see whether digital usage checkouts were more popular than physical usage checkouts. Consequently, a line plot was necessary to show this comparison overtime trend.
+
 - Patterns:
   - Throughout 2022-2023, the number of physical usage checkout items each month stayed consistent. Where each month does not not surpass 350k checkouts for physical usage checkouts. Range: 250k - less than 350k checkouts.
   - The number of digital usage checkouts is gradually increasing throughout 2022-23.
 
 ### Second Trends Over Time Chart
 
-``````{r, echo = FALSE, warning = FALSE, code = readLines("chart_two.R")}
+``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("chart_two.R")}
 ```
 
 - Purpose:
- - This chart was included to show the number of checkouts for the various types of material formats including all of author Suzanne Collins' work. A line chart was appropriate to underline how some options are more popular than others when consuming material written by her. To add, color is a needed component in this chart to showcase that Suzanne Collins has four types of checkout material type formats offered at the SPL.
+  - This chart was included to show the number of checkouts for the various types of material formats including all of author Suzanne Collins' work. A line chart was appropriate to underline how some options are more popular than others when consuming material written by her. To add, color is a needed component in this chart to showcase that Suzanne Collins has four types of checkout material type formats offered at the SPL.
+  
 - Patterns:
-  - 
   - The number of checkouts for Suzanne Collen audio books is drastically increasing throughout the year.
   - The number of sound disc checkouts remains close to around 0.
   - The number eBook checkouts for Suzanne Collin is slightly declining.
@@ -62,11 +63,13 @@ Remarkably, interesting statistics can also be drawn from the overall checkout d
 
 ### Your Choice
 
-``````{r, echo = FALSE, warning = FALSE, code = readLines("chart3.R")}
+``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("chart3.R")}
 ```
 
 - Purpose:
-  - This stacked bar chart was created to show how there were more total checkouts for the story titled "Catching Fire" than "Mockingjay." Considering "Catching Fire" is the second to last book of the Hunger Games series - while "Mockingjay" is the last, this data visualization showcase is necessary to see whether the public continue on with this series after finishing "Catching Fire." In addition, the component of material type was included in this data visualization to get an idea of how people are consuming these two stories. To add, to have the stacked bar char not filled in completely with color was an intentional choice to ensure all the Material Type labels be represented to their fullest potential (i.e., sound disc).
+  - This stacked bar chart was created to show how there were more total checkouts for the story titled "Catching Fire" than "Mockingjay." Considering "Catching Fire" is the second to last book of the Hunger Games series - while "Mockingjay" is the last, this data visualization showcase is necessary to see whether the public continue on with this series after finishing "Catching Fire."
+  - In addition, the component of material type was included in this data visualization to get an idea of how people are consuming these two stories. To add, to have the stacked bar char not filled in completely with color was an intentional choice to ensure all the Material Type labels be represented to their fullest potential (i.e., sound disc).
+  
 - Patterns:
   - "Catching Fire" has more total number of checkouts that "Mockingjay."
   - The material type sound disk, in both titled stories, has a thin line (close to 0) to represent total checkouts.
